@@ -1,0 +1,38 @@
+#simple calculator beginner level
+#set1 for working with two values
+#set3 for working with three values
+
+sets = "set1","set2"
+
+set1 = "num1+num2","num1-num2","num1*num2"
+set2 = "num1+num2+num3","num1*num2*num3"
+
+choose = str(input("Enter your set here:"))
+
+if choose == "set1":
+    action = str(input("Add(a), Sub(s), Mult(m), Div(d)"))
+    num1 = int(input("Enter your number here:"))
+    num2 = int(input("Enter your number here:"))
+    if action == "a":
+        print("Addition is:",num1+num2)
+    elif action == "s":
+        print("Subtraction is:",num1-num2)
+    elif action == "m":
+        print("Multiplication is:",num1*num2)
+    elif action == "d":
+        print("Division is:",num1/num2)
+    else:
+        print("over")
+
+#set2
+if choose == "set2":
+    action = str(input("Add(a), Mult(m)"))
+    num1 = int(input("Enter your number here:"))
+    num2 = int(input("Enter your number here:"))
+    num3 = int(input("Enter your number here:"))
+    if action == "a":
+        print("Addition is:",num1+num2+num3)
+    elif action == "m":
+        print("Multiplication is:",num1*num2*num3)
+    else:
+        print("over")
